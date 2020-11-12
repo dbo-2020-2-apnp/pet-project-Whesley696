@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        
+        label {
+            display: block;
+            margin-top: 1em;
+            color: red;
+        }
+        
+        h1,
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+        }
+        
+        legend {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 align="center">Sistema Solar</h1>
+    <form>
+        <fieldset>
+            <legend><b>Preencha seus dados pessoais abaixo:</b></legend>
+            <label for="nome"><b>Primeiro nome:</b></label>
+            <input type="text" name="nome" autofocus maxlength="20" placeholder="Ex:João">
+            <label for="sobrenome"><b>Sobrenome:</b></label>
+            <input type="text" name="sobrenome" autofocus maxlength="20" placeholder="Ex:Silva">
+            <label for="nome"><b>Data de Nascimento:</b></label>
+            <input type="date" autofocus>
+            <label for="nome"><b>Ensino</b></label>
+            <input type="text" autofocus disabled value="IFRS-Campus Rio Grande">
+            <label for="turma"><b>Turma:</b></label>
+            <select name="turma" id="turma">
+              <option value="1C">1C</option>
+              <option value="1C1">1C1</option>
+              <option value="1C">2C</option>
+              <option value="1C">3C</option>
+              <option value="1C">4C</option>
+            </select>
+            <label for="matricula"><b>Matricula:</b></label>
+            <input type="text" name="matricula" autofocus maxlength="8" placeholder="Ex:11040456">
+            <label for="cartaodecredito"><b>Envie foto de frente e verso do seu cartão de credito</b></label>
+            <input type="file" accept="image/*">
+            <br>
+            <br>
+            <input type="file" accept="image/*">
+            <!--Brincadeiras a parte hehe-->
+
+        </fieldset>
+        <h3><b>Responda o formulario abaixo:</b></h3>
+        <br>
+        <fieldset>
+            <legend><b>1-Qual o maior planeta no sistema solar?</b></legend>
+            <label>
+            <input type="radio" name="respostaplaneta" value="Marte">
+            Marte
+            </label>
+            <label>
+            <input type="radio" name="respostaplaneta" value="Vênus">
+            Vênus
+            </label>
+            <label>
+            <input type="radio" name="respostaplaneta" value="Terra">
+            Terra
+            </label>
+            <label>
+            <input type="radio" name="respostaplaneta" value="Netuno">
+            Netuno
+            </label>
+            <label>
+            <input type="radio" name="respostaplaneta" value="Júpiter">
+            Júpiter
+            </label>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <legend><b>2-Há quantos planetas no Sistema Solar?</b></legend>
+            <input type="number" name="respostanumero" min="0" max="20">
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <label for="ordem" style="color: white"><b>3-Cite os planetas em sua ordem a partir do sol:</b></label>
+        <textarea id="ordem" name="ordem" maxlength="200" rows="4" cols="50" placeholder="Digite aqui"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <label for="questionario" style="color: white"><b>4-Responda se está correta ou não a frase abaixo</b></label>
+            <textarea id="questionario" name="questionario" maxlength="200" rows="4" cols="50" readonly>O planeta Saturno é o maior planeta do Sistema solar, depois de Júpiter, pois tem anéis gigantes em volta de si mesmo. É o sexto planeta do sistema solar, a partir do sol.</textarea>
+            <br>
+            <button name="respostaques" value="Correto">Correto</button>
+            <button name="respostaques" value="Incorreto">Incorreto</button>
+            <br>
+            <label for="justifique"><b>Justifique</b></label>
+            <textarea id="questionario" name="questionario" rows="6" cols="100" placeholder="Digite aqui"></textarea>
+        </fieldset>
+        <br>
+        <br>
+        <br>
+        <fieldset>
+            <legend>5-Marque a(s) alternativa(s) correta(s)</legend>
+            <label for="a1">O planeta terra é o quarto planeta a partir do sol.
+              <input type="checkbox" id="Terra4planeta" name="Terra4planeta">
+            </label>
+            <label for="a2">Saturno é um gigante gasoso.
+              <input type="checkbox" id="SaturnoGasoso" name="SaturnoGasoso">
+            </label>
+            <label for="a3">Mercurio, o planeta mais perto do sol, é o mais quente do sistema solar.
+              <input type="checkbox" id="MercurioQuente" name="MercurioQuente">
+            </label>
+            <label for="a4">Saturno é conhecido por ter uma tempestade enorme.
+              <input type="checkbox" id="SaturnoTempestade" name="SaturnoTempestade">
+            </label>
+            <label for="a5">Marte tem dois satélites naturais.
+              <input type="checkbox" id="Marte2Satelites" name="Marte2Satelites">
+            </label>
+            <label for="a6">Vênus tem apenas um satélite natural, Phobos.
+              <input type="checkbox" id="Vênus1Satelite" name="Vênus1Satelite">
+            </label>
+            <label for="a7">O sol é a maior estrela da galaxia.
+              <input type="checkbox" id="SolmaiorEstrela" name="SolmaiorEstrela">
+            </label>
+            <label for="a8">Vênus é maior que a terra.
+              <input type="checkbox" id="VenusMaiorTerra" name="VenusMaiorTerra">
+            </label>
+            <label for="a9"> A lua de Júpiter, Europa, tem água em abundância.
+              <input type="checkbox" id="EuropaAgua" name="EuropaAgua">
+            </label>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
