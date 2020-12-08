@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            height: 754px;
+        }
+        
+        header {
+            background-color: black;
+            width: 1112px;
+            height: 100px;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding: 20px;
+        }
+        
+        header nav ul li {
+            align-items: flex-start;
+            position: relative;
+            list-style: none;
+            font-size: 20px;
+            width: 150px;
+            text-align: center;
+            top: 20px;
+            left: 200px;
+        }
+        
+        header nav {
+            height: 105px;
+        }
+        
+        header nav ul li span {
+            position: relative;
+            align-items: flex-start;
+            list-style: none;
+            font-size: 20px;
+            width: 150px;
+            left: 210px;
+        }
+        
+        header nav ul {
+            display: flex;
+        }
+        
+        section {
+            background-color: rgb(243, 39, 24);
+            width: 170px;
+            height: 613px;
+        }
+        
+        section nav li {
+            height: 65px;
+            padding: 0px;
+            width: 150px;
+            position: relative;
+            left: 10px;
+            font-size: 20px;
+        }
+        
+        section.m1 {
+            background-color: yellow;
+            min-width: 388px;
+            max-width: 388px;
+            max-height: 19px;
+            position: relative;
+            left: 170px;
+            padding: 297px;
+            bottom: 613px;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        div img {
+            width: 200px;
+            border: 1px solid black;
+            position: relative;
+            right: 100px;
+        }
+        
+        img.moletom1 {
+            width: 167px;
+        }
+        
+        @font-face {
+            src: url(fonte/Heretic.ttf);
+            font-family: heretic;
+        }
+        
+        h1 {
+            align-items: center;
+            text-align: center;
+            position: relative;
+            bottom: 350px;
+            font-size: 100px;
+            left: 300px;
+        }
+        
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            position: relative;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Loja</li>
+                <li>Seu Espaço</li>
+                <li>Contato</li>
+                <li><span>Desejos</span></li>
+
+            </ul>
+
+        </nav>
+    </header>
+    <section>
+        <nav>
+            <li>Casacos</li>
+            <li>Camisas</li>
+            <li>Calças</li>
+            <li>Sapatos</li>
+            <li>Moletons</li>
+            <li>Acessórios</li>
+            <li>Toucas</li>
+            <li>Albuns</li>
+            <li>Posters</li>
+        </nav>
+
+    </section>
+
+    <section class="m1">
+        <h1>
+            <font face="heretic">Home Sick</font>
+        </h1>
+        <div>
+            <img src="img/0059c68376.jpg" class="moletom1">
+            <p style="text-align: center">50R$</p>
+        </div>
+        <div><img src="img/cry.jpg">
+            <p style="text-align: center">20R$</p>
+        </div>
+        <div><img src="img/download.jpg">
+            <p style="text-align: center">60R$</p>
+        </div>
+    </section>
+</body>
+
+</html>
